@@ -6,7 +6,7 @@ define('TELEGRAM_TOKEN', '999999999:XXXXXXXXXXXXXXXXXXXXXXXXXXXX');
 // сюда нужно вписать ваш внутренний айдишник
 define('TELEGRAM_CHATID', '99999999');
 
-message_to_telegram('New User at'+$_SERVER['REMOTE_ADDR']);
+message_to_telegram($_SERVER['REMOTE_ADDR']);
 
 function message_to_telegram($text)
 {
